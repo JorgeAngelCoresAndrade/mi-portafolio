@@ -22,85 +22,51 @@
 
 <!--hacer codigo-->
 
-<div class="fondo">
-  <h1 >Bienvenido a BLOOMELECTRONIC</h1>
-  <p >Explora artículos electrónicos y mecánicos.</p>
-</div>
+<h1>Calculadora de Resistencias</h1>
 
+  <div class="contenedor">
+    <img src="img/resistencia.jpg" alt="Resistencia" class="imagen">
+    <p class="texto">La calculadora de resistencias no es solo un ejercicio de programación: su utilidad práctica está en que permite interpretar el código de colores de las resistencias de manera rápida y precisa. En electrónica, cada resistencia lleva pintadas unas bandas de colores que indican su valor en ohmios, pero leerlas puede ser confuso, especialmente cuando trabajas con muchos componentes o con valores poco comunes. Con esta herramienta, el usuario selecciona los colores de las bandas y el sistema traduce automáticamente esos colores en un número, mostrando el valor real de la resistencia. Esto facilita el trabajo en proyectos electrónicos, evita errores de cálculo manual y ahorra tiempo al identificar componentes dentro de un catálogo o circuito.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-  <h1 class="title">Catálogo de Componentes</h1>
-
-  <div class="cards">
-    <div class="card" onclick="window.location.href='detalle_resistencia.html'">
-      <img src="img/resistencia.jpg" alt="resistencia">
-      <div class="card-body">
-        <h5>Resistencias 220</h5>
-        <p>Resistencia de carbón, ideal para proyectos electrónicos.</p>
-        <span class="badge">Resistencias</span>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='detalle_micro.html'">
-      <img src="img/microprocesador.jpg" alt="microcontrolador">
-      <div class="card-body">
-        <h5>Microcontrolador Arduino Uno</h5>
-        <p>Placa de desarrollo basada en ATmega328P.</p>
-        <span class="badge">Microcontroladores</span>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='detalle_capacitor.html'">
-      <img src="img/capacitor.jpg" alt="capacitor">
-      <div class="card-body">
-        <h5>Capacitor 100µF</h5>
-        <p>Capacitor electrolítico para filtrado de señales.</p>
-        <span class="badge">Capacitores</span>
-      </div>
-    </div>
   </div>
-</div>
 
 
-<h1 class="title">Catálogo de Categorías</h1>
-<div class="cards">
-  <a href="categoria_resistencias.html" class="card">
-    <img src="img/resistencia.jpg" alt="Resistencias">
-    <div class="card-body">
-      <h5>Resistencias</h5>
-      <span class="badge">Resistencias</span>
-    </div>
-  </a>
 
-  <a href="categoria_micro.html" class="card">
-    <img src="img/microprocesador.jpg" alt="Microcontroladores">
-    <div class="card-body">
-      <h5>Microcontroladores</h5>
-      <span class="badge">Microcontroladores</span>
-    </div>
-  </a>
 
-  <a href="categoria_capacitores.html" class="card">
-    <img src="img/capacitor.jpg" alt="Capacitores">
-    <div class="card-body">
-      <h5>Capacitores</h5>
-      <span class="badge">Capacitores</span>
-    </div>
-  </a>
-</div>
+
+
+  <label>Banda 1:</label>
+  <select id="banda1"></select>
+  <br>
+
+  <label>Banda 2:</label>
+  <select id="banda2"></select>
+  <br>
+
+  <label>Multiplicador:</label>
+  <select id="multiplicador"></select>
+  <br>
+
+  <button id="calcular">Calcular</button>
+
+  <div id="resultado"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
