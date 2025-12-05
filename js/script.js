@@ -26,7 +26,6 @@ const colores = {
       "Plateado": 0.01
     };
 
-    // Función para llenar selects
     function llenarSelect(id, opciones) {
       const select = document.getElementById(id);
       for (let color in opciones) {
@@ -37,12 +36,10 @@ const colores = {
       }
     }
 
-    // Llenar los selects
     llenarSelect("banda1", colores);
     llenarSelect("banda2", colores);
     llenarSelect("multiplicador", multiplicadores);
 
-    // Calcular resistencia
     document.getElementById("calcular").addEventListener("click", () => {
       const b1 = colores[document.getElementById("banda1").value];
       const b2 = colores[document.getElementById("banda2").value];
