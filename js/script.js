@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.querySelector(".navbar-menu");
+
+    hamburger.addEventListener("click", function () {
+      menu.classList.toggle("show");
+    });
+  });
+
 const colores = {
       "Negro": 0,
       "Marrón": 1,
